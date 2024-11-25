@@ -70,9 +70,9 @@ export default function Login() {
           {/* Register Redirect */}
           <p className="text-sm text-gray-600 mt-4 text-center">
             Do not have an account?{" "}
-            <a href="/register" className="text-primary hover:underline">
+            <Link href="/register" className="text-primary hover:underline">
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
       </div>
