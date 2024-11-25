@@ -1,4 +1,6 @@
 // pages/login.js
+import Link from "next/link";
+
 export default function Login() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -48,12 +50,12 @@ export default function Login() {
                 />
                 <span className="ml-2">Remember Me</span>
               </label>
-              <a
+              <Link
                 href="/forgot-password"
                 className="text-sm text-blue-500 hover:underline"
               >
                 Forgot Password?
-              </a>
+              </Link>
             </div>
   
             {/* Submit Button */}

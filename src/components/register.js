@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RegisterForm() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -82,9 +84,9 @@ export default function RegisterForm() {
           {/* Login Redirect */}
           <p className="text-sm text-gray-600 mt-4 text-center">
             Already have an account?{" "}
-            <a href="/login" className="text-blue-500 hover:underline">
+            <Link href="/login" className="text-primary hover:underline">
               Log in
-            </a>
+            </Link>
           </p>
         </div>
       </div>
