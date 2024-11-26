@@ -7,7 +7,7 @@ import PricingSection from '@/components/pricingSection'
 const Treatment = () => {
   return (
     <>
-    <Hero heading="Treatments" content="Experience top-notch dental care tailored to your needs. From preventive care to cosmetic enhancements,
+    <Hero heading="Treatments" content="Experience Top-notch Dental care tailored to your needs. From preventive care to Cosmetic Enhancements,
       we ensure your smile is as healthy as it is radiant." url="./hero_header1.png"/>
     <TreatmentSection/>
     <ScrollImage/>
