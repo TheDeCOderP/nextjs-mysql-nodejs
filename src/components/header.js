@@ -50,29 +50,29 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md fixed w-full">
+    <nav className="bg-white shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link href="/">
-              <img className="h-[50px] w-[160px]" src="/logo1.png" alt="Dental Clinic" />
+              <img className="h-[50px] w-[160px] border-none" src="/logo1.png" alt="Dental Clinic" />
             </Link>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <Link href="/" className="text-gray-900  hover:text-black px-3 py-2 rounded-md text-sm font-medium text-[1rem] transition-all duration-300 ease-in-out hover:bg-gray-200 hover:scale-105">
+              <Link href="/" className="text-gray-900  hover:text-black px-3 py-2 rounded-md text-sm font-medium text-[1rem] transition-all duration-300 ease-in-out hover:bg-gray-200 hover:scale-105 text-[1.1rem]">
                 Home
               </Link>
-              <Link href="/about" className="text-gray-900  hover:text-black px-3 py-2 rounded-md text-sm font-medium text-[1rem] transition-all duration-300 ease-in-out hover:bg-gray-200 hover:scale-105">
+              <Link href="/about" className="text-gray-900  hover:text-black px-3 py-2 rounded-md text-sm font-medium text-[1rem] transition-all duration-300 ease-in-out hover:bg-gray-200 hover:scale-105 text-[1.1rem]">
                 About
               </Link>
-              <Link href="/treatments" className="text-gray-900  hover:text-black px-3 py-2 rounded-md text-sm font-medium text-[1rem] transition-all duration-300 ease-in-out hover:bg-gray-200 hover:scale-105">
+              <Link href="/treatment" className="text-gray-900  hover:text-black px-3 py-2 rounded-md text-sm font-medium text-[1rem] transition-all duration-300 ease-in-out hover:bg-gray-200 hover:scale-105 text-[1.1rem]">
                 Treatments
               </Link>
-              <Link href="/testimonials" className="text-gray-900  hover:text-black px-3 py-2 rounded-md text-sm font-medium text-[1rem] transition-all duration-300 ease-in-out hover:bg-gray-200 hover:scale-105">
+              <Link href="/testimonials" className="text-gray-900  hover:text-black px-3 py-2 rounded-md text-sm font-medium text-[1rem] transition-all duration-300 ease-in-out hover:bg-gray-200 hover:scale-105 text-[1.1rem]">
                 Testimonials
               </Link>
-              <Link href="/contact" className="text-gray-900  hover:text-black px-3 py-2 rounded-md text-sm font-medium text-[1rem] transition-all duration-300 ease-in-out hover:bg-gray-200 hover:scale-105"
+              <Link href="/contact" className="text-gray-900  hover:text-black px-3 py-2 rounded-md text-sm font-medium text-[1rem] transition-all duration-300 ease-in-out hover:bg-gray-200 hover:scale-105 text-[1.1rem]"
               >
                 Contact
               </Link>
@@ -80,7 +80,7 @@ const Header = () => {
                 Register
               </Link>
               <Link href="/appointment" className="bg-blue-500 hover:bg-blue-700 text-white px-3 py-2 rounded-md text-sm font-medium">
-                Appointment
+                Book Appointment
               </Link>
             </div>
           </div>

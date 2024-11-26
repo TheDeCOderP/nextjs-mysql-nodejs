@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 overflow-x-hidden ">
      
       {/* Hero Section */}
       <header className="bg-primary text-white py-12">

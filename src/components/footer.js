@@ -75,7 +75,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-r from-[#0a1426] to-[#1a365d] text-white py-10 sm:py-16 px-4 sm:px-8 relative overflow-hidden">
+    <footer className="bg-gradient-to-r from-[#0a1426] to-[#1a365d] text-white py-10 sm:py-16 px-4 sm:px-8 relative overflow-hidden ">
       {/* Gradient Top Border */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#3182ce] to-[#63b3ed]"></div>
 
@@ -86,9 +86,7 @@ const Footer = () => {
           <img className='mb-4' src='./logo1.png' alt='logo' />
           </div>
           <p className="text-gray-300 leading-relaxed text-md mb-6 max-w-md mx-auto sm:mx-0">
-            Committed to your oral health and well-being. Our experienced team
-            offers comprehensive dental services tailored to your needs.
-            Contact us for a consultation.
+            Committed to your oral health and well-being. 
           </p>
           <h3 className="text-xl font-semibold mb-4 relative pb-3 text-center sm:text-left after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-1 after:bg-gradient-to-r after:from-[#3182ce] after:to-[#63b3ed] after:rounded-sm">
             Follow Us On
