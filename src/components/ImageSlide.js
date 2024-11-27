@@ -60,7 +60,7 @@ const ScrollImage = () => {
 
   useEffect(() => {
     if (!isHovered) {
-      intervalRef.current = setInterval(handleNext, 5000); // Change slide every 5 seconds
+      intervalRef.current = setInterval(handleNext, 5000); // Auto-slide every 5 seconds
     }
 
     return () => {
@@ -70,20 +70,20 @@ const ScrollImage = () => {
 
   return (
     <div
-      className="max-w-6xl mx-auto px-4 py-12"
+      className="max-w-[95vw] sm:max-w-[80vw] mx-auto px-6 py-8 sm:px-12 sm:py-12 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg border-4 border-blue-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Section Heading */}
-      <h2 className="text-3xl md:text-4xl font-extrabold text-center text-blue-700 mb-10 flex items-center justify-center gap-3">
-        <UserCheck className="text-blue-600 w-10 h-10" />
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-blue-700 mb-8 sm:mb-10 flex items-center justify-center gap-3">
+        <UserCheck className="text-blue-600 w-8 h-8 sm:w-10 sm:h-10" />
         Our Expert Medical Team
       </h2>
 
       {/* Image and Info Section */}
-      <div className="grid md:grid-cols-2 gap-8 bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-200 transition-all duration-300 hover:shadow-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 bg-white shadow-xl rounded-xl sm:rounded-2xl overflow-hidden border border-gray-200 transition-all duration-300 hover:shadow-lg">
         {/* Image Section */}
-        <div className="relative h-[400px] md:h-[500px] group">
+        <div className="relative h-[300px] sm:h-[400px] md:h-[500px] group">
           <Image
             src={doctors[currentIndex].image}
             alt={doctors[currentIndex].name}
@@ -93,25 +93,25 @@ const ScrollImage = () => {
           {/* Navigation Buttons */}
           <button
             onClick={handlePrev}
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 p-3 rounded-full shadow-md hover:bg-blue-50 transition group"
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 p-2 sm:p-3 rounded-full shadow-md hover:bg-blue-50 transition group"
           >
-            <ChevronLeft className="text-gray-700 group-hover:text-blue-600 w-6 h-6" />
+            <ChevronLeft className="text-gray-700 group-hover:text-blue-600 w-5 h-5 sm:w-6 sm:h-6" />
           </button>
           <button
             onClick={handleNext}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 p-3 rounded-full shadow-md hover:bg-blue-50 transition group"
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 p-2 sm:p-3 rounded-full shadow-md hover:bg-blue-50 transition group"
           >
-            <ChevronRight className="text-gray-700 group-hover:text-blue-600 w-6 h-6" />
+            <ChevronRight className="text-gray-700 group-hover:text-blue-600 w-5 h-5 sm:w-6 sm:h-6" />
           </button>
         </div>
 
         {/* Info Section */}
-        <div className="p-6 md:p-8 flex flex-col justify-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transition-colors duration-300 hover:text-blue-700">
+        <div className="p-4 sm:p-6 md:p-8 flex flex-col justify-center">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 transition-colors duration-300 hover:text-blue-700">
             {doctors[currentIndex].name}
           </h3>
-          <div className="mb-6 space-y-2">
-            <p className="text-lg text-blue-600 font-semibold tracking-wide uppercase">
+          <div className="mb-4 sm:mb-6 space-y-1 sm:space-y-2">
+            <p className="text-base sm:text-lg text-blue-600 font-semibold tracking-wide uppercase">
               {doctors[currentIndex].specialty}
             </p>
             <p className="text-gray-600 font-medium flex items-center gap-2">
@@ -119,22 +119,22 @@ const ScrollImage = () => {
               Experience: {doctors[currentIndex].experience}
             </p>
           </div>
-          <p className="text-gray-700 leading-relaxed text-base md:text-lg">
+          <p className="text-gray-700 leading-relaxed text-sm sm:text-base md:text-lg">
             {doctors[currentIndex].bio}
           </p>
         </div>
       </div>
 
       {/* Thumbnail Navigation */}
-      <div className="flex justify-center mt-6 space-x-3">
+      <div className="flex justify-center mt-6 space-x-2 sm:space-x-3">
         {doctors.map((doctor, index) => (
           <button
             key={doctor.id}
             onClick={() => setCurrentIndex(index)}
             aria-label={`View ${doctor.name}'s profile`}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ease-in-out hover:scale-125 ${
+            className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ease-in-out hover:scale-110 ${
               index === currentIndex
-                ? 'bg-blue-600 scale-125 shadow-md'
+                ? 'bg-blue-600 scale-110 shadow-md'
                 : 'bg-gray-300 hover:bg-blue-300'
             }`}
           />
