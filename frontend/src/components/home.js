@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       {/* Header Section */}
-      <header className="relative bg-gradient-to-r from-blue-50 to-blue-100 text-gray-800 py-16 px-6 sm:px-12 m-10">
+      <header className="relative bg-gradient-to-r from-blue-50 to-blue-100 text-gray-800 py-16 px-6 sm:px-12  md:w-[100vw]">
   <div className="container mx-auto flex flex-col lg:flex-row items-center">
     {/* Text Content */}
     <div className="lg:w-1/2 text-center lg:text-left">

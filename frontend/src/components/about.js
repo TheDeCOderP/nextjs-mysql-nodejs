@@ -1,5 +1,7 @@
 // pages/about.js
 import Head from 'next/head';
+import Heroheader from './hero_header';
+
 
 export default function About() {
   return (
@@ -14,24 +16,7 @@ export default function About() {
       <main className="bg-gray-50 min-h-screen text-gray-800">
 
         
-      <header className="relative bg-gradient-to-r from-blue-50 via-white to-blue-100 text-gray-800 py-20 px-6 sm:px-12 shadow-lg m-11">
-  <div className="container mx-auto text-center">
-    <div className="relative z-10">
-      <h1 className="text-4xl sm:text-5xl font-extrabold text-blue-600 mb-6">
-        Your Smile Deserves the Best Care
-      </h1>
-      <p className="text-lg sm:text-xl text-gray-600 mb-8">
-        Providing quality dental care with a personal touch, helping you achieve the smile of your dreams.
-      </p>
-      <a
-        href="/contact"
-        className="inline-block bg-blue-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl hover:bg-blue-500 transition duration-300 transform hover:scale-105"
-      >
-        Book an Appointment
-      </a>
-    </div>
-  </div>
-</header>
+      <Heroheader heading="about" content="lorem4" url=""/>
 
 
         {/* About Content */}
@@ -110,6 +95,25 @@ export default function About() {
             </div>
           </div>
         </section>
+
+        <header className="relative bg-gradient-to-r from-blue-50 via-white to-blue-100 text-gray-800 py-20 px-6 sm:px-12 shadow-lg m-11">
+  <div className="container mx-auto text-center">
+    <div className="relative z-10">
+      <h1 className="text-4xl sm:text-5xl font-extrabold text-blue-600 mb-6">
+        Your Smile Deserves the Best Care
+      </h1>
+      <p className="text-lg sm:text-xl text-gray-600 mb-8">
+        Providing quality dental care with a personal touch, helping you achieve the smile of your dreams.
+      </p>
+      <a
+        href="/appointment"
+        className="inline-block bg-blue-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl hover:bg-blue-500 transition duration-300 transform hover:scale-105"
+      >
+        Book an Appointment
+      </a>
+    </div>
+  </div>
+</header>
 
       
       </main>
