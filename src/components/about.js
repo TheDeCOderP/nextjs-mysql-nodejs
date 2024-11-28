@@ -86,7 +86,7 @@ export default function About() {
                   alt="Dentist 1"
                   className="rounded-full mx-auto w-32 h-32 object-cover shadow-md w-full h-auto rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 />
-                <h3 className="mt-4 font-semibold text-lg">Dr. Sarah Johnson</h3>
+                <h3 className="mt-4 font-semibold text-lg">Dr.Shatisha Ranna</h3>
                 <p className="text-gray-600 text-sm">Cosmetic Dentist</p>
               </div>
               <div>
@@ -95,7 +95,7 @@ export default function About() {
                   alt="Dentist 2"
                   className="rounded-full mx-auto w-32 h-32 object-cover shadow-md w-full h-auto rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 />
-                <h3 className="mt-4 font-semibold text-lg">Dr. Michael Lee</h3>
+                <h3 className="mt-4 font-semibold text-lg">Dr.Anjalli </h3>
                 <p className="text-gray-600 text-sm">Orthodontist</p>
               </div>
               <div>

@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <main className="container mx-auto py-8">{children}</main>
+      <main className="overflow-x-hidden">{children}</main>
       <Footer />
     </>
   );

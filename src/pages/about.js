@@ -1,7 +1,7 @@
 import About from "@/components/about";
-import Login from "@/components/login";
 
-const LoginPage = () => {
+
+const about = () => {
     return (
         <div className="container">
            <About/>
@@ -9,4 +9,4 @@ const LoginPage = () => {
     )
 }
 
-export default LoginPage;
+export default about;
