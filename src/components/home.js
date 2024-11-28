@@ -81,17 +81,17 @@ export default function Home() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
         {
-          name: "Jane Doe",
+          name: "Aashish",
           image: "/images/patint1.jpg",
           text: "The staff was incredibly kind and professional. My teeth feel amazing!",
         },
         {
-          name: "John Smith",
+          name: "John Ajay",
           image: "/images/patint2.webp",
           text: "I never thought visiting the dentist could be such a pleasant experience.",
         },
         {
-          name: "Emily Wilson",
+          name: "Amrita",
           image: "/images/patint3.jpg",
           text: "Excellent care! I recommend this clinic to everyone I know.",
         },
