@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const textShadow = require('tailwindcss-textshadow');
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +13,9 @@ module.exports = {
         foreground: "var(--foreground)",
         primary: "#000", // Add your preferred primary color
         secondary: "#2ecc71", // Add your preferred secondary color
+        textShadow: {
+          white: '3px 3px 2px white',
+        },
       },
       container: {
         center: true, // Ensures the container is centered
@@ -26,5 +30,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [textShadow],
 };
