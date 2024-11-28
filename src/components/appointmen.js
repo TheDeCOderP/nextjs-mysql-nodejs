@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import HeroSection from './hero';
+import HeroSection from './hero.js';
 export default function AppointmentPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
