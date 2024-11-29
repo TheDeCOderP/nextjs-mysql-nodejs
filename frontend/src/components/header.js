@@ -38,10 +38,10 @@ const Header = () => {
               <Link href="/contact" className="text-gray-900 hover:text-black px-3 py-2 rounded-md text-sm font-medium text-[1.1rem] transition-all duration-300 ease-in-out hover:bg-gray-200 hover:scale-105">
                 Contact
               </Link>
-              <Link href="/register" className="bg-blue-500 hover:bg-blue-700 text-white px-7 py-2 rounded-md text-sm font-medium">
+              <Link href="/register" className="bg-btnclr hover:scale-105 text-white px-7 py-2 rounded-md text-sm font-medium">
                 Register
               </Link>
-              <Link href="/appointment" className="bg-blue-500 hover:bg-blue-700 text-white px-3 py-2 rounded-md text-sm font-medium">
+              <Link href="/appointment" className="bg-btnclr hover:scale-105 text-white px-3 py-2 rounded-md text-sm font-medium">
                 Book Appointment
               </Link>
             </div>

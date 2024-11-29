@@ -37,8 +37,8 @@ const DentalFAQ = () => {
   };
 
   return (
-    <div className="max-w-[90vw] md:max-w-[80vw] mx-auto px-4 py-8 md:py-12 bg-gradient-to-r from-blue-50 to-blue-100 mt-10 border-4 border-blue-300 rounded-lg">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-blue-800">
+    <div className="max-w-[90vw] md:max-w-[80vw] mx-auto px-4 py-8 md:py-12 bg-bgclr mt-10 border-4 border-blue-300 rounded-lg">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-headclr">
         Frequently Asked Questions
       </h2>
       <div className="space-y-4">

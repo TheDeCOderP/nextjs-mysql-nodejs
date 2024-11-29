@@ -70,13 +70,13 @@ const ScrollImage = () => {
 
   return (
     <div
-      className="max-w-[95vw] sm:max-w-[80vw] mx-auto px-6 py-8 sm:px-12 sm:py-12 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg border-4 border-blue-300"
+      className="max-w-[95vw] sm:max-w-[80vw] mx-auto px-6 py-8 sm:px-12 sm:py-12 bg-bgclr rounded-lg border-4 border-blue-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Section Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-blue-700 mb-8 sm:mb-10 flex items-center justify-center gap-3">
-        <UserCheck className="text-blue-600 w-8 h-8 sm:w-10 sm:h-10" />
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-headclr mb-8 sm:mb-10 flex items-center justify-center gap-3">
+        <UserCheck className="text-headclr w-8 h-8 sm:w-10 sm:h-10" />
         Our Expert Medical Team
       </h2>
 
@@ -111,7 +111,7 @@ const ScrollImage = () => {
             {doctors[currentIndex].name}
           </h3>
           <div className="mb-4 sm:mb-6 space-y-1 sm:space-y-2">
-            <p className="text-base sm:text-lg text-blue-600 font-semibold tracking-wide uppercase">
+            <p className="text-base sm:text-lg text-headclr font-semibold tracking-wide uppercase">
               {doctors[currentIndex].specialty}
             </p>
             <p className="text-gray-600 font-medium flex items-center gap-2">

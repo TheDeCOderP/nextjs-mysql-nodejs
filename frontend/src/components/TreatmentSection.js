@@ -55,8 +55,8 @@ const TreatmentSection = () => {
   ];
 
   return (
-    <div className="max-w-[95vw] sm:max-w-[80vw] my-8 mx-auto p-6 sm:p-14 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg border-4 border-blue-300">
-      <h1 className="text-3xl sm:text-4xl mb-10 sm:mb-12 text-center font-bold bg-gradient-to-r from-blue-900 via-blue-600 to-blue-500 bg-clip-text text-transparent relative pb-4 drop-shadow-lg">
+    <div className="max-w-[95vw] sm:max-w-[80vw] my-8 mx-auto p-6 sm:p-14 bg-bgclr rounded-lg border-4 border-blue-300">
+      <h1 className="text-3xl sm:text-4xl mb-10 sm:mb-12 text-center font-bold  bg-clip-text  relative pb-4 drop-shadow-lg text-headclr">
         Our Treatments
         <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-blue-500 to-blue-800 rounded-sm"></span>
       </h1>
@@ -81,14 +81,14 @@ const TreatmentSection = () => {
                   flippedCard === index ? "opacity-0 invisible" : "opacity-100 visible"
                 } transition-all duration-700`}
               >
-                <div className="w-20 sm:w-24 h-20 sm:h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md">
+                <div className="w-20 sm:w-24 h-20 sm:h-24  bg-headclr rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-md">
                   <img
                     src={treatment.icon}
                     alt={treatment.title}
                     className="w-16 sm:w-20 h-16 sm:h-20 object-contain"
                   />
                 </div>
-                <h3 className="my-2 sm:my-4 text-lg sm:text-xl font-bold text-blue-900 tracking-tight">
+                <h3 className="my-2 sm:my-4 text-lg sm:text-xl font-bold text-headclr tracking-tight">
                   {treatment.title}
                 </h3>
                 <p className="text-sm sm:text-base text-slate-600 font-medium">{treatment.shortDesc}</p>

@@ -12,8 +12,8 @@ const TeamSection = () => {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center py-8 md:py-12 bg-blue-50 mt-10  mx-auto rounded-lg">
-      <h1 className="relative text-3xl md:text-4xl font-bold text-blue-900 mb-6 md:mb-12 text-center">
+    <div className="w-full flex flex-col justify-center items-center py-8 md:py-12 bg-bgclr mt-10  mx-auto rounded-lg">
+      <h1 className="relative text-3xl md:text-4xl font-bold text-headclr mb-6 md:mb-12 text-center">
         Our Team
       </h1>
       <div className="w-full max-w-5xl">

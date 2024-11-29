@@ -30,13 +30,13 @@ export default function AppointmentPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-50 to-blue-100">
+    <div className="min-h-screen bg-bgclr">
       {/* Hero Section */}
       <HeroSection/>
       {/* Appointment Form Section */}
       <div className="max-w-4xl mx-auto py-12 px-4">
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-3xl font-semibold text-center text-gray-800">Fill out the form below</h2>
+          <h2 className="text-3xl font-semibold text-center text-headclr">Fill out the form below</h2>
           <form onSubmit={handleSubmit} className="space-y-6 mt-8">
             {/* Name Field */}
             <div>
@@ -159,7 +159,7 @@ export default function AppointmentPage() {
             <div className="mt-6 text-center">
               <button
                 type="submit"
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-blue-500 transition-all duration-300 transform hover:scale-105"
+                className="bg-btnclr text-white px-8 py-3 rounded-lg shadow-lg  transition-all duration-300 transform hover:scale-105"
               >
                 Book Appointment
               </button>

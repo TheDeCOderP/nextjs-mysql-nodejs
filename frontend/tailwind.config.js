@@ -12,7 +12,10 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#000", // Add your preferred primary color
-        secondary: "#2ecc71", // Add your preferred secondary color
+        secondary: "#2ecc71",
+        btnclr:"var(--primary-color)",
+        headclr:"var(--secondary-color)",
+        bgclr:"var(--third-color)",
         textShadow: {
           white: '3px 3px 2px white',
         },

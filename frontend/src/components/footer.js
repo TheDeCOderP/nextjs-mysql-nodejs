@@ -30,7 +30,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-r from-[#0a1426] to-[#1a365d] text-white py-10 sm:py-16 px-4 sm:px-8 relative overflow-hidden">
+    <footer className="bg-gradient-to-r from-[#0a1426] to-[#1a365d] text-white py-10 sm:py-16 px-4 sm:px-8 relative overflow-hidden w-full">
       {/* Gradient Top Border */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#3182ce] to-[#63b3ed]"></div>
 
@@ -115,7 +115,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="w-full max-w-[180px] sm:max-w-[200px] p-3 text-sm text-black border-2 border-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#63b3ed]"
               />
-              <button className="bg-[#1363DF] text-white px-4 py-3 text-sm rounded-r-lg hover:bg-[#3182ce] transition-colors duration-300">
+              <button className="bg-btnclr text-white px-4 py-3 text-sm rounded-r-lg  transition-colors duration-300">
                 Subscribe
               </button>
             </div>

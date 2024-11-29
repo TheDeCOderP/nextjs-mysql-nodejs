@@ -3,8 +3,8 @@ import { FaTooth, FaMoneyBillAlt, FaUserMd, FaRobot } from "react-icons/fa";
 
 const DentalCard = () => {
   return (
-    <div className="bg-white text-gray-800 p-6 md:p-10 rounded-lg shadow-lg mx-auto max-w-[90vw] md:max-w-[80vw] border-4 border-blue-300 my-10 bg-gradient-to-r from-blue-50 to-blue-100">
-      <h2 className="text-2xl md:text-3xl font-extrabold mb-6 md:mb-8 text-center text-gray-900">
+    <div className=" text-gray-800 p-6 md:p-10 rounded-lg shadow-lg mx-auto max-w-[90vw] md:max-w-[80vw] border-4 border-blue-300 my-10 bg-bgclr">
+      <h2 className="text-2xl md:text-3xl font-extrabold mb-6 md:mb-8 text-center text-headclr">
         Why Choose Us?
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10">

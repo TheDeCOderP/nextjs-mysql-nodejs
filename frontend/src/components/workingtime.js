@@ -3,20 +3,20 @@ import { Clock, Calendar, PhoneCall } from "lucide-react";
 
 const WorkingHours = () => {
   const hours = [
-    { day: "Monday", time: "8:00 AM - 5:00 PM" },
-    { day: "Tuesday", time: "8:00 AM - 5:00 PM" },
-    { day: "Wednesday", time: "8:00 AM - 5:00 PM" },
-    { day: "Thursday", time: "8:00 AM - 5:00 PM" },
-    { day: "Friday", time: "8:00 AM - 3:00 PM" },
-    { day: "Saturday", time: "Emergency Only" },
-    { day: "Sunday", time: "Closed" },
+    { day: "Monday", time: "8:00 AM - 5:00 PM", isSpecial: false },
+    { day: "Tuesday", time: "8:00 AM - 5:00 PM", isSpecial: false },
+    { day: "Wednesday", time: "8:00 AM - 5:00 PM", isSpecial: false },
+    { day: "Thursday", time: "8:00 AM - 5:00 PM", isSpecial: false },
+    { day: "Friday", time: "8:00 AM - 3:00 PM", isSpecial: true },
+    { day: "Saturday", time: "Emergency Only", isSpecial: true },
+    { day: "Sunday", time: "Closed", isSpecial: true },
   ];
 
   const getCurrentDay = () => {
     const days = [
       "Sunday",
       "Monday",
-      "Tuesday",
+      "Tuesday", 
       "Wednesday",
       "Thursday",
       "Friday",
@@ -26,50 +26,76 @@ const WorkingHours = () => {
   };
 
   return (
-    <div className="max-w-[95vw] md:max-w-[80vw] mx-auto rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 my-8 bg-gradient-to-r from-blue-50 to-blue-100 border-4 border-blue-300">
+    <div className="w-full max-w-full md:max-w-[80vw] mx-auto rounded-2xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl bg-bgclr my-10">
       {/* Header */}
-      <div className="bg-white py-4 px-6 text-center overflow-hidden">
-        <div className="flex justify-center items-center bg-gradient-to-r from-blue-100 to-blue-200 rounded-md ">
-          <Calendar className="mr-2 text-blue-500" size={20} />
-          <h2 className="text-xl md:text-4xl font-bold text-blue-600">
+      <div className="bg-bgclr py-5 px-6 border-b border-gray-200">
+        <div className="flex items-center justify-center space-x-3">
+          <Calendar className="text-blue-600" size={32} />
+          <h2 className="text-4xl font-bold text-headclr tracking-tight ">
             Office Hours
           </h2>
         </div>
       </div>
 
-      {/* Working Hours */}
-      <div className="px-4 py-6 space-y-4">
+      {/* Working Hours List */}
+      <div className="bg-bgclr px-6 py-5 space-y-3">
         {hours.map((dayHour) => (
           <div
             key={dayHour.day}
-            className={`flex justify-between items-center py-3 px-4 rounded-lg shadow-sm transition-all duration-200 ${
-              dayHour.day === getCurrentDay()
-                ? "bg-blue-100 border border-blue-300 font-semibold text-blue-800"
-                : "bg-white hover:bg-gray-50 text-gray-700 shadow-xl"
-            }`}
+            className={`
+              flex justify-between items-center 
+              px-4 py-3 rounded-lg 
+              transition-all duration-200 
+              ${
+                dayHour.day === getCurrentDay()
+                  ? "bg-blue-100 border-2 border-headclr shadow-sm"
+                  : "bg-white hover:bg-gray-100 shadow-sm"
+              }
+              ${dayHour.isSpecial ? "text-blue-800 font-semibold" : "text-gray-700"}
+            `}
           >
-            <span className="text-sm md:text-base font-medium">
+            <span className="text-base font-medium tracking-tight">
               {dayHour.day}
             </span>
             <div className="flex items-center space-x-2">
-              <Clock className="text-blue-600" size={16} />
-              <span className="text-sm md:text-base">{dayHour.time}</span>
+              <Clock 
+                className={`
+                  ${
+                    dayHour.isSpecial 
+                    ? "text-blue-600" 
+                    : "text-gray-500"
+                  }
+                `} 
+                size={18} 
+              />
+              <span className="text-sm">
+                {dayHour.time}
+              </span>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Footer */}
-      <div className="bg-gray-100 py-4 px-6 flex items-center justify-between border-t border-gray-200">
-        <div className="flex items-center space-x-2">
-          <PhoneCall className="text-blue-600" size={18} />
-          <span className="text-xs md:text-sm text-gray-700">
+      {/* Contact Footer */}
+      <div className="bg-bgclr py-4 px-6 border-t border-gray-200 flex items-center justify-between">
+        <div className="flex items-center space-x-3">
+          <PhoneCall className="text-blue-600" size={20} />
+          <span className="text-sm text-gray-600 font-medium">
             Emergency Contact
           </span>
         </div>
         <a
           href="tel:+1-555-DENTAL"
-          className="text-xs md:text-sm font-semibold text-blue-700 hover:text-blue-900 transition-colors"
+          className="
+            text-sm font-semibold 
+            text-blue-700 
+            hover:text-blue-900 
+            transition-colors 
+            rounded-md 
+            focus:outline-none 
+            focus:ring-2 
+            focus:ring-blue-300
+          "
         >
           (555) 338-6825
         </a>

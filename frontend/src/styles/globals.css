@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 /* Global Styles */
+:root {
+    --primary-color: #3B82F6; /* Default value (Tailwind blue) */
+    --secondary-color: #2563EB;
+    --third-color: #EAF3FF;
+  }

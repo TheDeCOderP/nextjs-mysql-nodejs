@@ -60,7 +60,7 @@ const TestimonialCarousel = () => {
   }, []);
 
   return (
-    <section className="w-[90vw] bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 py-8 rounded-lg mt-10 mx-auto border-4 border-blue-300">
+    <section className="w-[90vw] bg-bgclr text-headclr py-8 rounded-lg mt-10 mx-auto border-4 border-blue-300">
       <div className="container mx-auto max-w-4xl px-4">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-bold mb-4">Patient Testimonials</h2>
@@ -74,16 +74,16 @@ const TestimonialCarousel = () => {
           <button
             onClick={prevTestimonial}
             className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 
-                       bg-blue-500 text-white p-2 rounded-full 
-                       hover:bg-blue-600 transition-colors z-20 shadow-lg"
+                       bg-btnclr text-white p-2 rounded-full 
+                        transition-colors z-20 shadow-lg"
           >
             <ChevronLeft size={20} className="w-6 h-6" />
           </button>
           <button
             onClick={nextTestimonial}
             className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 
-                       bg-blue-500 text-white p-2 rounded-full 
-                       hover:bg-blue-600 transition-colors z-20 shadow-lg"
+                       bg-btnclr text-white p-2 rounded-full 
+                        transition-colors z-20 shadow-lg"
           >
             <ChevronRight size={20} className="w-6 h-6" />
           </button>
@@ -111,7 +111,7 @@ const TestimonialCarousel = () => {
                 />
               )}
               <div className="text-center md:text-left">
-                <h3 className="text-lg md:text-2xl font-semibold">
+                <h3 className="text-lg md:text-2xl font-semibold text-headclr">
                   {testimonials[currentIndex].name}
                 </h3>
                 {testimonials[currentIndex].position && (

@@ -12,7 +12,7 @@ export default function HeroSection() {
            }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center text-white p-16">
-          <h1 className="text-5xl font-extrabold">Book Your Appointment</h1>
+          <h1 className="text-5xl font-extrabold text-headclr">Book Your Appointment</h1>
           <p className="mt-4 text-xl">We are here to help you with your dental needs. Schedule an appointment today!</p>
         </div>
   

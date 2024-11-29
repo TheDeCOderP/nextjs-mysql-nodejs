@@ -10,11 +10,11 @@ export default function Home() {
       </Head>
 
       {/* Header Section */}
-      <header className="relative bg-gradient-to-r from-blue-50 to-blue-100 text-gray-800 py-16 px-6 sm:px-12  md:w-[100vw]">
+      <header className="relative bg-bgclr text-gray-800 py-16 px-6 sm:px-12  md:w-[100vw]">
   <div className="container mx-auto flex flex-col lg:flex-row items-center">
     {/* Text Content */}
     <div className="lg:w-1/2 text-center lg:text-left">
-      <h1 className="text-4xl sm:text-5xl font-extrabold text-blue-600 mb-6">
+      <h1 className="text-4xl sm:text-5xl font-extrabold text-headclr mb-6">
         A Healthy Smile for Every Stage of Life
       </h1>
       <p className="text-lg sm:text-xl text-gray-600 mb-8">
@@ -22,7 +22,7 @@ export default function Home() {
       </p>
       <a
         href="/contact"
-        className="inline-block bg-blue-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl hover:bg-blue-500 transition duration-300 transform hover:scale-105"
+        className="inline-block bg-btnclr text-white font-semibold px-8 py-4 rounded-full shadow-xl  transition duration-300 transform hover:scale-105"
       >
         Book an Appointment
       </a>
@@ -43,7 +43,7 @@ export default function Home() {
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-6 sm:px-12 text-center">
-          <h2 className="text-3xl font-extrabold text-gray-800 mb-12">Our Services</h2>
+          <h2 className="text-3xl font-extrabold text-headclr mb-12">Our Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { title: "General Dentistry", image: "/images/General-Dentisry.jpg" },
@@ -64,7 +64,7 @@ export default function Home() {
                     className="rounded-lg w-full h-40 object-cover transform transition-transform duration-300 hover:scale-105"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-blue-600 mt-4">{service.title}</h3>
+                <h3 className="text-xl font-bold text-headclr mt-4">{service.title}</h3>
                 <p className="text-gray-600 mt-2">
                   High-quality {service.title.toLowerCase()} to meet your needs.
                 </p>
@@ -75,9 +75,9 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-bgclr">
   <div className="container mx-auto px-6 sm:px-12 text-center">
-    <h2 className="text-3xl font-extrabold text-gray-800 mb-12">What Our Patients Say</h2>
+    <h2 className="text-3xl font-extrabold text-headclr mb-12">What Our Patients Say</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
         {
@@ -108,7 +108,7 @@ export default function Home() {
             />
           </div>
           <p className="text-gray-600 italic mt-4">"{testimonial.text}"</p>
-          <h4 className="text-blue-600 font-bold mt-4">{testimonial.name}</h4>
+          <h4 className="text-headclr font-bold mt-4">{testimonial.name}</h4>
         </div>
       ))}
     </div>
@@ -117,9 +117,9 @@ export default function Home() {
 
 
       {/* Call-to-Action Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-100 to-blue-200 text-gray-800">
+      <section className="py-20 bg-bgclr text-gray-800 mt-14">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-extrabold text-blue-600 mb-6">
+          <h2 className="text-3xl font-extrabold text-headclr mb-6">
             Ready to Enhance Your Smile?
           </h2>
           <p className="text-lg text-gray-700 mb-8">
@@ -127,7 +127,7 @@ export default function Home() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-blue-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl hover:bg-blue-500 transition duration-300 transform hover:scale-105"
+            className="inline-block bg-btnclr text-white font-semibold px-8 py-4 rounded-full shadow-xl  transition duration-300 transform hover:scale-105"
           >
             Get Started
           </a>

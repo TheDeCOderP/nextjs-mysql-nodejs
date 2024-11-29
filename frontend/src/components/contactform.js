@@ -41,12 +41,12 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="min-h-screen bg-blue-50 flex items-center justify-center px-4 py-8 ">
+    <div className="min-h-screen bg-bgclr flex items-center justify-center px-4 py-8 ">
       <div className="w-full  mx-auto bg-white shadow-lg rounded-lg overflow-hidden md:w-[70vw]">
         {/* Header */}
-        <div className="bg-blue-800 text-white text-center py-6 px-4">
-          <h2 className="text-xl font-bold md:text-2xl">Contact Our Dental Practice</h2>
-          <p className="text-sm text-blue-100 mt-2">
+        <div className="bg-white text-headclr text-center py-6 px-4">
+          <h2 className="text-xl font-bold md:text-4xl">Contact Our Dental Practice</h2>
+          <p className="text-sm text-blue-300 mt-2">
             We're here to help you achieve your best smile.
           </p>
         </div>
@@ -120,7 +120,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 transform hover:scale-105 disabled:opacity-50"
+            className="w-full bg-btnclr text-white py-3 rounded-lg  transition duration-300 transform hover:scale-105 disabled:opacity-50"
           >
             {isSubmitting ? "Sending..." : "Send Message"}
           </button>

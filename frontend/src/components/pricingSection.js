@@ -4,7 +4,7 @@ import { Check, X, Stethoscope } from 'lucide-react';
 const PricingSection = () => {
   const pricingPlans = [
     {
-      icon: <Stethoscope className="text-blue-500" size={48} />,
+      icon: <Stethoscope className="text-headclr" size={48} />,
       name: 'Basic Dental Care',
       price: 99,
       features: [
@@ -22,7 +22,7 @@ const PricingSection = () => {
       textColor: 'text-blue-900'
     },
     {
-      icon: <Stethoscope className="text-blue-600" size={48} />,
+      icon: <Stethoscope className="text-headclr" size={48} />,
       name: 'Premium Dental Package',
       price: 249,
       features: [
@@ -39,7 +39,7 @@ const PricingSection = () => {
       textColor: 'text-blue-950'
     },
     {
-      icon: <Stethoscope className="text-blue-700" size={48} />,
+      icon: <Stethoscope className="text-headclr" size={48} />,
       name: 'Comprehensive Care',
       price: 399,
       features: [
@@ -60,11 +60,11 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 bg-gradient-to-r from-blue-50 to-blue-100 border-4 border-blue-300 rounded-lg w-[90vw] sm:w-[80vw] mx-auto my-10">
+    <section className="py-12 sm:py-16 bg-bgclr border-4 border-blue-300 rounded-lg w-[90vw] sm:w-[80vw] mx-auto my-10">
       <div className="container mx-auto px-4">
         {/* Heading Section */}
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-blue-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-headclr mb-4">
             Our Dental Care Packages
           </h2>
           <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
@@ -88,13 +88,13 @@ const PricingSection = () => {
             >
               <div className="p-6 sm:p-8 flex flex-col h-full">
                 {/* Plan Icon and Name */}
-                <div className="flex items-center mb-4 sm:mb-6">
+                <div className="flex items-center mb-4 sm:mb-6  ">
                   {plan.icon}
                   <div className="ml-3">
-                    <h3 className="text-xl sm:text-2xl font-semibold">
+                    <h3 className="text-xl sm:text-2xl font-semibold text-headclr">
                       {plan.name}
                       {plan.recommended && (
-                        <span className="ml-2 px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
+                        <span className="ml-2 px-2 py-1 bg-blue-100 text-headclr text-xs rounded-full">
                           Most Popular
                         </span>
                       )}
@@ -133,8 +133,8 @@ const PricingSection = () => {
                 <button
                   className="
                     w-full py-3 rounded-lg
-                    bg-blue-600 text-white
-                    hover:bg-blue-700 transition-colors
+                    bg-btnclr text-white
+                    hover:scale-105 transition-colors
                     font-semibold text-sm sm:text-base
                     mt-auto
                   "
