@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import Heroheader from './hero_header';
 import { Fullscreen } from 'lucide-react';
+import Link from 'next/link';
 
 
 export default function About() {
@@ -25,12 +26,12 @@ export default function About() {
       <p className="text-lg sm:text-xl text-gray-600 mb-8">
         Providing quality dental care with a personal touch, helping you achieve the smile of your dreams.
       </p>
-      <a
+      <Link
         href="/appointment"
         className="inline-block bg-btnclr text-white font-semibold px-8 py-4 rounded-full shadow-xl  transition duration-300 transform hover:scale-105"
       >
         Book an Appointment
-      </a>
+      </Link>
     </div>
   </div>
 </header>

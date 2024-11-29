@@ -66,7 +66,7 @@ const TestimonialCarousel = () => {
           <h2 className="text-2xl md:text-4xl font-bold mb-4">Patient Testimonials</h2>
           <p className="text-base md:text-xl max-w-2xl mx-auto text-blue-600">
             Hear from our patients about their transformative dental experiences
-            and the exceptional care they've received.
+            and the exceptional care they have received.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ const TestimonialCarousel = () => {
             />
 
             <p className="text-gray-800 text-base md:text-xl font-medium italic mb-4 min-h-[100px]">
-              "{testimonials[currentIndex].text}"
+              {testimonials[currentIndex].text}
             </p>
 
             <div className="flex justify-center mb-4">

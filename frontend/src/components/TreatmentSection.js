@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 const TreatmentSection = () => {
@@ -104,12 +105,12 @@ const TreatmentSection = () => {
                 <p className="text-sm sm:text-lg text-white/90 max-w-[90%] mx-auto leading-relaxed">
                   {treatment.fullDesc}
                 </p>
-                <a
+                <Link
                   href="/appointment"
                   className="mt-4 sm:mt-6 w-full sm:w-auto px-3 sm:px-6 py-2 sm:py-3 text-center bg-white/20 border border-white/40 rounded-lg sm:rounded-xl text-white font-medium transition-all hover:bg-white/30 hover:-translate-y-1"
                 >
                   Book Appointment
-                </a>
+                </Link>
               </div>
             </div>
           </div>

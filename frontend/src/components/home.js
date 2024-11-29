@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,12 +21,12 @@ export default function Home() {
       <p className="text-lg sm:text-xl text-gray-600 mb-8">
         Professional dental care tailored for you and your family. Book an appointment today to get the care you deserve.
       </p>
-      <a
+      <Link
         href="/contact"
         className="inline-block bg-btnclr text-white font-semibold px-8 py-4 rounded-full shadow-xl  transition duration-300 transform hover:scale-105"
       >
         Book an Appointment
-      </a>
+      </Link>
     </div>
 
     {/* Image */}
@@ -125,12 +126,12 @@ export default function Home() {
           <p className="text-lg text-gray-700 mb-8">
             Schedule an appointment with our professional team today.
           </p>
-          <a
+          <Link
             href="/contact"
             className="inline-block bg-btnclr text-white font-semibold px-8 py-4 rounded-full shadow-xl  transition duration-300 transform hover:scale-105"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </section>
 
