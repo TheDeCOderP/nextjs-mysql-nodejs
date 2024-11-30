@@ -1,7 +1,7 @@
 
-import AppointmentPage from "@/components/appointmen";
+import AppointmentPage from "@/components/appointment";
 
-const appointment = () => {
+const AppointmentData = () => {
     return (
         <div className="container">
            <AppointmentPage/>
@@ -9,4 +9,4 @@ const appointment = () => {
     )
 }
 
-export default appointment;
+export default AppointmentData;

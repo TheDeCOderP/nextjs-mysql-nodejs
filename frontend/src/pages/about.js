@@ -1,7 +1,7 @@
 import About from "@/components/about";
 
 
-const about = () => {
+const AboutPage = () => {
     return (
         <div className="container">
            <About/>
@@ -9,4 +9,4 @@ const about = () => {
     )
 }
 
-export default about;
+export default AboutPage;

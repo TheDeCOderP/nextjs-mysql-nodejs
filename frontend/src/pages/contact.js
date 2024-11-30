@@ -1,10 +1,10 @@
-import ContactForm from '@/components/contactform'
-import Heroheader from '@/components/hero_header'
-import TeamSection from '@/components/ourteam'
-import WorkingHours from '@/components/workingtime'
+import ContactForm from '@/components/contactform.js'
+import Heroheader from '@/components/hero_header.js'
+import TeamSection from '@/components/ourteam.js'
+import WorkingHours from '@/components/workingtime.js'
 import React from 'react'
 
-const contact = () => {
+const ContactPage = () => {
   return (
     <>
     <Heroheader heading="contact US" url="/contact_header.png" content="Get in touch with us today for appointments, inquiries, or personalized dental care assistance!"/>
@@ -15,4 +15,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default ContactPage;
