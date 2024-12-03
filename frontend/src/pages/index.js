@@ -1,11 +1,13 @@
-import RegisterForm from '@/components/register';
 import React from 'react';
-import HomeOne from '@/components/home';
 
 export default function Home() {
   return (
     
-    <HomeOne/>
+   <>
+   <h1 className='text-blue-900'>
+   Welcome to Prabisha Consulting
+   </h1>
+   </>
 
   );
 }

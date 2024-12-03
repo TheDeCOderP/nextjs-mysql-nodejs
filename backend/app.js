@@ -7,11 +7,11 @@ const db = require('./db.js');
 const app = express();
 
 // Define a port
-const PORT = 3000;
+const PORT = 4000;
 
 // Define a basic route
 app.get('/', (req, res) => {
-  res.send('Hello, World!');
+  res.send('Hello, Now you can start using backend');
 });
 
 // Start the server
