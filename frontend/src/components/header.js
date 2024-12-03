@@ -13,12 +13,12 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md sticky w-full z-50">
+    <nav className="bg-white  p-2 shadow-md sticky w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
             <Link href="/">
-              <img className="h-[50px] w-[160px] border-none" src="/logo1.png" alt="Dental Clinic" />
+              <img className="h-[70px] w-[200px] border-none" src="/logo.png" alt="Dental Clinic" />
             </Link>
           </div>
           <div className="hidden md:block">
